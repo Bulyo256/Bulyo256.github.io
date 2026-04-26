@@ -3,56 +3,151 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BULYO256 | Bboy Kampala</title>
+  <title>BULYO256 | Bboy Kampala Uganda</title>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
     body {
       background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
-      color: #fff; font-family: Arial, sans-serif; min-height: 100vh;
+      color: #fff;
+      font-family: 'Arial', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
     }
-    nav {
-      background: rgba(0,0,0,0.8); padding: 15px 20px; 
-      position: sticky; top: 0; backdrop-filter: blur(10px);
-      border-bottom: 1px solid #FF4D00;
-    }
-    nav a {
-      color: #ccc; text-decoration: none; margin: 0 15px; 
-      font-weight: 600; transition: color 0.3s;
-    }
-    nav a:hover, nav a.active { color: #FF4D00; }
-    .logo { color: #FF4D00; font-weight: 900; font-size: 1.3em; }
+    
     .container {
-      max-width: 700px; margin: 0 auto; padding: 60px 20px; 
-      text-align: center; animation: fadeIn 1s;
+      max-width: 600px;
+      animation: fadeIn 1s ease-in;
     }
-    @keyframes fadeIn { from{opacity:0; transform:translateY(20px)} to{opacity:1; transform:translateY(0)} }
-    h1 { font-size: 3.5em; color: #FF4D00; text-shadow: 0 0 20px rgba(255,77,0,0.5); margin-bottom: 15px; }
-    .tagline { font-size: 1.3em; color: #ccc; margin-bottom: 40px; }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    h1 {
+      font-size: 3.5em;
+      font-weight: 900;
+      color: #FF4D00;
+      text-shadow: 0 0 20px rgba(255, 77, 0, 0.5);
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+    }
+    
+    .tagline {
+      font-size: 1.3em;
+      color: #ccc;
+      margin-bottom: 30px;
+      font-weight: 300;
+    }
+    
+    .location {
+      color: #FF4D00;
+      font-weight: 600;
+    }
+    
+    .services {
+      background: rgba(255, 77, 0, 0.1);
+      border: 1px solid #FF4D00;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 30px 0;
+    }
+    
+    .services h2 {
+      color: #FF4D00;
+      margin-bottom: 15px;
+      font-size: 1.5em;
+    }
+    
+    .services ul {
+      list-style: none;
+      font-size: 1.1em;
+    }
+    
+    .services li {
+      margin: 8px 0;
+    }
+    
     .btn {
-      display: inline-block; background: #FF4D00; color: #fff; 
-      padding: 15px 35px; text-decoration: none; border-radius: 50px; 
-      font-weight: 700; font-size: 1.2em; margin: 10px; 
-      transition: all 0.3s; box-shadow: 0 4px 15px rgba(255,77,0,0.4);
+      display: inline-block;
+      background: #FF4D00;
+      color: #fff;
+      padding: 15px 35px;
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 1.2em;
+      margin: 10px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(255, 77, 0, 0.4);
     }
-    .btn:hover { background: #ff6a00; transform: translateY(-3px); }
-    .footer { margin-top: 80px; font-size: 0.9em; color: #666; }
-    @media (max-width: 600px) { h1{font-size:2.5em} nav a{margin:0 8px; font-size:0.9em} }
+    
+    .btn:hover {
+      background: #ff6a00;
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(255, 77, 0, 0.6);
+    }
+    
+    .socials {
+      margin-top: 30px;
+    }
+    
+    .socials a {
+      color: #ccc;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 1.1em;
+      transition: color 0.3s;
+    }
+    
+    .socials a:hover {
+      color: #FF4D00;
+    }
+    
+    .footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #666;
+    }
+    
+    @media (max-width: 600px) {
+      h1 { font-size: 2.5em; }
+      .btn { padding: 12px 25px; font-size: 1em; }
+    }
   </style>
 </head>
 <body>
-  <nav>
-    <a href="index.html" class="logo">BULYO256</a>
-    <a href="index.html" class="active">Home</a>
-    <a href="about.html">About</a>
-    <a href="book.html">Book Me</a>
-  </nav>
-  
   <div class="container">
     <h1>BULYO256</h1>
-    <p class="tagline">Bboy | Content Creator | Kampala, Uganda</p>
-    <p style="font-size:1.2em; margin-bottom:40px;">Turning the streets of 256 into my stage. Available for battles, shows, and music videos.</p>
-    <a class="btn" href="book.html">Book Me Now</a>
-    <a class="btn" style="background:transparent; border:2px solid #FF4D00;" href="about.html">My Story</a>
+    <p class="tagline">Bboy | Content Creator | <span class="location">Kampala, Uganda</span></p>
+    
+    <div class="services">
+      <h2>Available For:</h2>
+      <ul>
+        <li>⚡ Dance Battles & Competitions</li>
+        <li>🎥 Music Videos & Ads</li>
+        <li>🎉 Events & Shows</li>
+        <li>📱 TikTok Collabs</li>
+      </ul>
+    </div>
+    
+    <a class="btn" href="https://wa.me/25641811075?text=Yo%20BULYO256,%20I%20want%20to%20book%20you%20for...">Book Me on WhatsApp</a>
+    
+    <div class="socials">
+      <a href="https://tiktok.com/@bulyo" target="_blank">TikTok</a>
+      <a href="https://youtube.com/@yourusername" target="_blank">YouTube</a>
+      <a href="https://instagram.com/yourusername" target="_blank">Instagram</a>
+    </div>
+    
     <p class="footer">© 2026 BULYO256 | Made in 256</p>
   </div>
 </body>
